@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!--La estructura la he planteado metiendo contenedores mas pequeños dentro de uno grande. El grande lo etiqueto en section, para que lo veas mas claro, pero podria ser un div
+    el div coches podriamos prescindir de el. Luego lo divido en tres zonas: izquierda, centro y derecha. Dentro de los laterales metemos los coches y dentro del central metemos el boton y el cartel de ganador-->
+    <section id="circuito">
+        <div class="coches">
+            <div class="izq">
+                <div class="coche1" id="imgCoche1">
+                    <img src="img/Mercedes.png" height="170em" id="1" >
+                    <div class="km1" id="stats1">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="centro">
+                <div class="boton" onclick= "corre()">Acelera
+            
+                </div>
+                <div class="win" id ="winner"></div>
+                <div class="reload" id = "reload" onclick="clean()">Nueva Carrera</div>
+            </div>
+            <div class="dch">
+                <div class="coche2" id="imgCoche2">
+                    <img src="img/Tesla.png" height="170em" id="2" >
+                    <div class="km2" id="stats2">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="JS/main.js"></script>
+</body>
+</html>
